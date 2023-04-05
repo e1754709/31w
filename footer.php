@@ -1,11 +1,13 @@
 <?php
-/**
-* Template footer.php
-*/
+// Template footer.php
 ?>
+
 <footer class="site__footer">
-<h3>Pied de page</h3>
+
+    <section class="footer-video"><?php dynamic_sidebar( 'Footer' ); ?></section>
 </footer>
+
 <?php wp_footer(); ?>
+
 </body>
 </html>

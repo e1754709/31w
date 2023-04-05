@@ -1,0 +1,17 @@
+.site__main{
+    section{
+        * {
+            padding : 0.5em
+        }
+        background-color: rgba(255,355,255,0.6);
+        border-radius: 10px;
+        padding: 2em;
+        margin: 2em;
+        
+        p {
+            max-width: 80ch;
+        }
+
+
+    }
+}

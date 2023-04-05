@@ -1,11 +1,12 @@
 .site__entete{
+    background-color: transparent;
+    overflow-x: hidden;
     h1{
         text-align: center;
         padding: 2em;
         a {
             text-decoration: none;
             text-transform: uppercase;
-    
         }
     }
 }
@@ -24,11 +25,14 @@
         list-style-type: none;
         margin-left: auto;
         .menu-item{
-            flex: 1 0 70px;
-            padding: 0 2em;
+            flex: 1 0 20px;
+            padding: 0 0.5em;
+            
+            
             a {
-                width: fit-content;
-                font-size: 18px;
+                text-transform: uppercase;
+                white-space: nowrap;
+                font-size: 20px;
                 padding: 3px 5px;
                 color: black;
                 text-decoration: none;
@@ -49,7 +53,44 @@
                 text-transform: uppercase;
         
             }
-        }
+        } 
     }
     
 }
+.menusearch {
+    display : flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+        align-items:center;
+        justify-content: flex-end;
+        flex: 1;
+    }
+}
+
+#chkBurger {
+    display : none;
+}
+#chkBurger:checked ~ .menu-entete-container {
+    transform : translateX(0);
+}
+.burger {
+    display : block;
+    @media screen and (min-width: 500px) {
+    display: none;    
+}
+}
+
+.menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .25s;
+    @media screen and (min-width: 500px) {
+        transform : translateX(0);  
+    }
+}
+
+
+

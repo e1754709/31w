@@ -1,11 +1,7 @@
-/**
-Mise en page avec display: grid
-*/
-
+/**/
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
 }
 
 .site__main {
@@ -15,29 +11,44 @@ Mise en page avec display: grid
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: rgba(201, 108, 229, 0.209);
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+
+  h3 {
+    margin-left: 2.5em;
+    
+  }
+  a {
+    div,p {
+      color: white;
+    }
+  }
 }
 /* body ou un conteneur globale */
 .site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "header"
-    "aside"
-    "main"
-    "footer";
-  row-gap: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    row-gap: 50px;
   @media screen and (min-width: 1000px) {
     grid-template-columns: 30% auto;
     grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
+      "header header"
+      "aside main"
+      "footer footer";
   }
 }
 
@@ -50,8 +61,8 @@ Mise en page avec display: grid
   @media screen and (min-width: 1000px) {
     grid-template-columns: auto;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+      "header"
+      "main"
+      "footer";
   }
 }
