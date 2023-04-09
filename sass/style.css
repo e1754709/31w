@@ -176,16 +176,16 @@ html {
 }
 
 .site__main section {
-  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  padding: 2em;
-  margin: 2em;
+  padding: 1em;
+  margin: 1em;
 }
 .site__main section * {
   padding: 0.5em;
 }
 .site__main section p {
-  max-width: 80ch;
+  max-width: 70ch;
+  font-size: 1.5em;
 }
 
 /**------------------ COMPOSANT -------------*/
@@ -294,9 +294,8 @@ html {
   height: 100%;
 }
 .blocflex article {
-  background-color: rgba(112, 134, 153, 0.8);
+  background-color: rgba(239, 244, 248, 0.8);
   border-radius: 10px;
-  border: 1px solid lightslategray;
   padding: 1em;
   flex: 0 0 400px;
   height: 400px;
@@ -322,7 +321,6 @@ html {
   padding-top: 1em;
 }
 .menusearch .recherche article {
-  background-color: lightgrey;
   margin: 10px;
 }
 
@@ -334,6 +332,7 @@ footer section {
   justify-content: space-evenly;
   align-items: center;
   padding: 1em;
+  border-radius: 10px;
 }
 
 .menu-cours-container .menu {
