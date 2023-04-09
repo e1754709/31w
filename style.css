@@ -402,21 +402,32 @@ footer section {
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-  border: 1px solid lightgrey;
   margin: 0.5em;
   border-radius: 10px;
 }
 .menu__bloc .menu .menu-item {
+  flex: 1;
   min-height: 5em;
+  font-size: 150%;
   border-radius: 10px;
+  background-color: rgba(127, 138, 194, 0.598);
 }
 .menu__bloc .menu .menu-item a {
   font-size: 1rem;
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .evenement__porte {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bell");
   background-repeat: no-repeat;
+  border: 2px solid black;
+  margin: 1em;
+}
+
+.creme__glacee {
+  border: 2px solid black;
+  margin: 1em;
 }/*# sourceMappingURL=style.css.map */
