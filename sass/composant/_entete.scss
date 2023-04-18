@@ -64,10 +64,10 @@
     align-items: flex-end;
     
     @media screen and (min-width:1000px) {
-        flex-direction: row;
+        /* flex-direction: row;
         align-items:center;
         justify-content: flex-end;
-        flex: 1;
+        flex: 1; */
     }
 }
 

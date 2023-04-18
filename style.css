@@ -250,10 +250,10 @@ html {
 }
 @media screen and (min-width: 1000px) {
   .menusearch {
-    flex-direction: row;
-    align-items: center;
+    /* flex-direction: row;
+    align-items:center;
     justify-content: flex-end;
-    flex: 1;
+    flex: 1; */
   }
 }
 
@@ -324,10 +324,10 @@ html {
   margin: 10px;
 }
 
-footer {
+.site__footer {
   margin: 1em;
 }
-footer section {
+.site__footer section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -359,7 +359,7 @@ footer section {
   color: black;
 }
 .menu-cours-container .menu .menu-item a .cours__sigle {
-  color: black;
+  color: blue;
   padding: 3px;
 }
 .menu-cours-container .menu .menu-item a .cours__titre {
@@ -430,4 +430,50 @@ footer section {
 .creme__glacee {
   border: 2px solid black;
   margin: 1em;
+}
+
+.page404 {
+  background-color: rgba(255, 255, 235, 0.5);
+  text-align: center;
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page404 h1 {
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+}
+.page404 h2 {
+  color: red;
+}
+.page404 .menu-cours-container #menu-cours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .page404 .menu-cours-container #menu-cours {
+    flex-direction: row;
+  }
+}
+.page404 .menu-cours-container #menu-cours .menu-item {
+  border-bottom: 2px solid blue;
+  margin: 2px;
+}
+.page404 .menu-cours-container #menu-cours .cours__titre {
+  margin: 0.2em;
+  color: blue;
+}
+.page404 .menu-cours-container .menu {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page404 .menu-cours-container .menu .menu-item {
+  border-bottom: 2px solid blue;
+  margin: 2px;
 }/*# sourceMappingURL=style.css.map */
