@@ -1,7 +1,9 @@
 .page404 {
-    background-color: rgba(255,255,235, 0.5);
     text-align: center;
 
+    background-image: url("maison.jpg");
+    background-size: 100%;
+    
     .recherche {
         label {
             max-width: max-content;
@@ -71,6 +73,10 @@
             .menu-item {
                 border-bottom: 2px solid blue;
                 margin: 2px;
+
+                a {
+                    color: blue;
+                }
             }
     
             @media screen and (min-width:1000px){
@@ -79,4 +85,8 @@
         }
     }
 
+}
+
+.page404::before {
+    
 }

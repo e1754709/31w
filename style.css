@@ -433,8 +433,9 @@ html {
 }
 
 .page404 {
-  background-color: rgba(255, 255, 235, 0.5);
   text-align: center;
+  background-image: url("maison.jpg");
+  background-size: 100%;
   display: flex;
   min-width: 100%;
   flex-direction: column;
@@ -494,6 +495,9 @@ html {
 .page404 .menu-note-wp-container #menu-note-wp.menu .menu-item {
   border-bottom: 2px solid blue;
   margin: 2px;
+}
+.page404 .menu-note-wp-container #menu-note-wp.menu .menu-item a {
+  color: blue;
 }
 @media screen and (min-width: 1000px) {
   .page404 .menu-note-wp-container #menu-note-wp.menu {
