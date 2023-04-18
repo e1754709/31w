@@ -7,7 +7,7 @@
     <title>ZA WARUDO</title>
     <?php wp_head(); ?>
 </head>
-<body class="custom-background site  <?= (is_front_page() ? "no-aside" : "");  ?> ">
+<body class="custom-background site  <?= (in_category('note-wp') || in_category('cours') ? "" : "no-aside");  ?> ">
     <header class="site__entete">  
         <section class="logo__menu">
             <?php the_custom_logo(); ?> 
@@ -24,7 +24,7 @@
             </div> 
         </section>
         <?php $classe = "";
-            if(is_front_page() == false){ $classe="invisible";} ?>
+            if(in_category('note-wp') || in_category('cours')){ $classe="invisible";} ?>
         <h1 class="site__titre <?=$classe?>"><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
         <h2 class="site__soustitre <?=$classe?>"><?php  bloginfo('description'); ?></h2>
     </header>

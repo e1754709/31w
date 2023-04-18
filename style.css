@@ -441,6 +441,23 @@ html {
   justify-content: center;
   align-items: center;
 }
+.page404 .recherche label {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.page404 .recherche .recherche__input {
+  margin: 1em;
+  background-color: darkgrey;
+}
+.page404 .recherche .recherche__input::-moz-placeholder {
+  font-size: 1.5em;
+}
+.page404 .recherche .recherche__input::placeholder {
+  font-size: 1.5em;
+}
+.page404 .recherche .recherche__bouton {
+  background-color: darkgrey;
+}
 .page404 h1 {
   color: red;
   font-weight: bold;
