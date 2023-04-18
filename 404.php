@@ -2,7 +2,7 @@
     //Ceci est notre modele.
 ?>
 <?php get_header(); ?>
-<main class="site__main no-aside">
+<main class="site__main">
     <h1>Page introuvable, vous pouvez tenter une recherche</h1>
     <?= get_search_form(); ?>
     <h2>Nos choix de cours</h2>

@@ -1,0 +1,11 @@
+.menu-cours-container {
+    display: flex;
+}
+
+@media screen and (max-width:720px){
+
+    .cours__titre {
+        display: none;
+    }
+
+}

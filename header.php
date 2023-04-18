@@ -28,7 +28,7 @@
         <h1 class="site__titre <?=$classe?>"><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
         <h2 class="site__soustitre <?=$classe?>"><?php  bloginfo('description'); ?></h2>
     </header>
-    <?php if(is_front_page() == false)
+    <?php if(in_category('note-wp') || in_category('cours'))
     {
         get_template_part("template-parts/aside");
     }
